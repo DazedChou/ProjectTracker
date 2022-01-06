@@ -1,4 +1,5 @@
 var timeEl = $("#currentTime");
+var formModal = $("#form-modal");
 
 function getTime() {
     var timeInterval = setInterval(function(){
@@ -6,4 +7,9 @@ function getTime() {
     )
 
 }
+
+$("#addProject").on("click", function(){
+    formModal.modal("show");
+})
+
 getTime();
