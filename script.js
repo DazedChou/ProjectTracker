@@ -9,6 +9,7 @@ function getTime() {
 }
 
 $("#addProject").on("click", function(){
+    console.log("test");
     formModal.modal("show");
 })
 
